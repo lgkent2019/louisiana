@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Contact Information</title>
+<meta charset = "UTF-8"/>
+<meta name="description" content="Ways to Contact Us">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class="pagebox">
+<header><h1>Contact Information</h1></header>
+ 
+<!-- change the active class to whichever page that it matches to -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="music.html">Music</a></li>
+<li><a href="food.html">Food and Wildlife</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<section>
+<article>
+<h4>Mailing Address:</h4>
+<p>
+Lynnette Kent</br>
+P.O. Box 519</br>
+Mission, SD 57555
+</p>
+</article>
+<article>
+<h4>Email Address:</h4>
+<p>
+lkent8468@students.mpcc.edu
+</p>
+<h4>Phone Number:</h4>
+<p>
+1.800.555.1234
+</p>
+</article>
+</section>
+
+<h4>Contact Form</h4>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="unitedstates">United States</option>
+      <option value="canada">Canada</option>
+      <option value="australia">Australia</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something" style="height:50px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<footer><p>Page created by Lynnette &copy; 2023</p></footer>
+</div>
+</body>
+</html>

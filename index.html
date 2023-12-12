@@ -1,0 +1,140 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Growing Up In Louisiana</title>
+<meta charset = "UTF-8"/>
+<meta name="description" content="My experience growing up in South Louisiana.">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class="pagebox">
+<header><h1>Growing Up in Louisiana</h1></header>
+ 
+<!-- change the active class to whichever page that it matches to -->
+<nav>
+<ul>
+<li><a class="active" href="index.html">Home</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="food.html">Food and Wildlife</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section>
+<article>
+<h2>Growing up in South Louisiana</h2>
+<p>
+I grew up about 30 miles north of the Gulf of Mexico.I enjoyed a variety of music and food. 
+Seafood was a main staple growing up. Along with rice and gravy. Louisiana has a rich 
+atmosphere of music, food and history. My grandmother spoke a mix of French and English.
+I have French, German, and Native American ancestry. Learning the different traditions
+and cultures of my ancestry shows me just how much Louisiana culture has combined these
+plus others such as Spanish and African cultures. 
+</p>
+ <hr/>
+</article>
+</section>
+
+<section id="slideshow">
+<h2>Slideshow</h2>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="images/pic1.jpeg" style="width:25%; height:50%">
+  <div class="text">Beignets at Cafe Du Monde</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="images/pic2.jpeg" style="width:25%; height:50%">
+  <div class="text">Young Gators</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="images/pic3.jpeg" style="width:25%; height:50%">
+  <div class="text">Gumbo and Potato Salad</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="images/pic4.jpeg" style="width:25%; height:50%">
+  <div class="text">Ducks chilling at the Park</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="images/pic5.jpeg" style="width:25%; height:50%">
+  <div class="text">Aquarium of America</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="images/pic6.jpeg" style="width:25%; height:50%">
+  <div class="text">Battleship USS Kidd</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+<hr/>
+</section>
+
+<article>
+<h3>Some Facts about Louisiana</h3>
+<ul>
+<li>Baton Rouge is the capitol.</li>
+<li>The climate is subtropical.</li>
+<li>The State seal is a pelican and her nest surrounded by the state motto.</li>
+<li>The State motto is Union, Justice, Confidence.</li>
+<li>Louisiana has 64 parishes.</li>
+<li>The alligator is the state reptile.</li>
+<li>The Bald Cypress is the state tree.</li>
+<li>The magnolia is the state flower.</li>
+</ul> 
+</article>
+
+<footer>
+<p>Page created by Lynnette &copy; 2023</p>
+</footer>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

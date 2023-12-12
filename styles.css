@@ -1,0 +1,129 @@
+/* CSS Document for louisiana */
+body{
+	background-color: #a3b18a;
+}
+
+header{
+	background-image: url('images/swamp.jpg');
+	background-size: cover;
+	height: 300px;
+	position: center;
+	text-align: right;
+}
+
+h2{
+	font-size: 50px;
+	font-family: helvetica, arial, sans-serif;
+	color: #ffffff
+	position: absolute;
+	bottom: 0;
+	left: 0:
+}
+
+h3{
+	font-size: 30px;
+	font-family: helvetica, arial, sans-serif;
+	color: #ffffff
+	position: absolute;
+	bottom: 0;
+	left: 0:
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 675;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+table{
+	boder-collaps: collapse;
+	width: 80%;
+	margin: auto;
+}
+td, th{
+	border: 2px solid #000000;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #3a5a40;
+}
+
+caption{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+footer{
+	font-style: italic;
+	text-align: center;
+}
+
+@media only screen and (max-width: 834px) {
+h1{font-size: 42px;}
+#slideshow{display: active border;}}
+
+@media only screen and (max-width: 568px){
+.pagebox{width: 90%;}
+.topnav{width: 100%;
+overflow: hidden;
+padding: none;}
+.topnav a{width:100%;
+display: block;
+text-align: center;
+background-color: #000000;
+border-style: solid;
+border-width: 1px;
+border-color: #323232;}
+.smallpic{
+	width:100%;
+}
+
